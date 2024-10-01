@@ -11,8 +11,9 @@ public class Main {
         double y1 = ler.nextDouble();
         double y2 = ler.nextDouble();
 
-        double distancia = ((x2 - x1) * 2) + ((y2 - y1) * 2);
+        double distancia = Math.sqrt(Math.pow(x2 - x1 , 2) + Math.pow(y2 - y1, 2));
 
-        System.out.printf("%.3f", distancia);
+
+        System.out.printf("%.4f", distancia);
     }
 }
